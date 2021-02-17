@@ -4,18 +4,15 @@ class CommentsController < ApplicationController
     end
 
     def create
-        byebug
         comment = Comment.new(comment_params)
 
         if comment.save
             render json:comment
-        else 
-            byebug
         end
     end
 
     private
     def comment_params
-        params.require(:comment).permit(:content)
+        params.require(:comment).permit(:content, :post_id)
     end
 end
