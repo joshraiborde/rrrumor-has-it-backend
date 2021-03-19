@@ -70,6 +70,7 @@ GEM
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
     ffi (1.14.2)
+    ffi (1.14.2-x64-mingw32)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.9)
@@ -90,6 +91,8 @@ GEM
     minitest (5.14.3)
     msgpack (1.4.2)
     nio4r (2.5.5)
+    nokogiri (1.11.1-x64-mingw32)
+      racc (~> 1.4)
     nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
     puma (5.2.1)
@@ -142,12 +145,15 @@ GEM
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2021.1)
+      tzinfo (>= 1.0.0)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     zeitwerk (2.4.2)
 
 PLATFORMS
+  x64-mingw32
   x86_64-darwin-19
 
 DEPENDENCIES
