@@ -24,6 +24,10 @@
         render json: Post.all.map {|post| PostSerializer.new(post)}
 
     end
+    def getOne
+        post = Post.find(params[:id])
+        render json:PostSerializer.new(post)
+    end
 	private
 
     def post_params
